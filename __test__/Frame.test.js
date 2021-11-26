@@ -1,4 +1,4 @@
-const Frame = require("../src/Frame.js");
+const Frame = require("../src/models/Frame.js");
 
 
 describe("Generate a multidimensional array.", () => {
