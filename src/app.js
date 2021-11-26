@@ -1,4 +1,4 @@
-const Frame = require("./models/Frame.js");
+// const Bowling = require("./models/Bowling.js");
 /*
 El juego consta de 10 cuadros como se muestra arriba. 
 En cada cuadro, el jugador tiene dos oportunidades para derribar 10 pines. 
@@ -15,13 +15,12 @@ En el décimo cuadro, un jugador que lanza un repuesto o golpea puede rodar las 
 Sin embargo, no se pueden rodar más de tres bolas en el décimo cuadro.
 */
 
-let frame = new Frame();
-frame.createFrame();
-let test = frame.getFrame();
-
-
-console.table(test);
-
+//let frame = new Frame();
+// frame.createFrame();
+// frame.setScore(12,2);
+// frame.setTotalScore(10, 2);
+// frame.printFrame();
+// let bowling = new Bowling();
 //let arreglo = frame.getFrame();
 
 /*//Logica para tirar los pinos
@@ -41,35 +40,33 @@ for(let i=0; i<2; i++)
 console.log(total);
 */
 //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA xd
-let temp = 0;
-for(let i = 0; i < 10; i++)
-{
-  temp = 0;
-  let temp2 = 0;
-  for(let j=0; j<2; j++)
-  {
-    if(j==1)
-    {
-      temp2= Math.floor(Math.random() * 10);
-      test[0][i][j] = temp2-temp;
-      console.log(temp2-temp)
+// let temp = 0;
+// for(let i = 0; i < 10; i++)
+// {
+//   temp = 0;
+//   let temp2 = 0;
+//   for(let j=0; j<2; j++)
+//   {
+//     if(j==1)
+//     {
+//       temp2= Math.floor(Math.random() * 10);
+//       test[0][i][j] = temp2-temp;
+//       console.log(temp2-temp)
 
-    }else
-    {
-      test[0][i][j] = temp = Math.floor(Math.random()*10);
-    }
-  }
+//     }else
+//     {
+//       test[0][i][j] = temp = Math.floor(Math.random()*10);
+//     }
+//   }
 
-  if(i>=1)
-  {
-    let valorant= 0;
-    valorant = test[1][i-1];
-    temp+= valorant;
-  }
-  test[1][i] = temp;
-}
-
-console.table(test);
+//   if(i>=1)
+//   {
+//     let valorant= 0;
+//     valorant = test[1][i-1];
+//     temp+= valorant;
+//   }
+//   test[1][i] = temp;
+// }
 
 /*
 co-authored-by: Javier_Barreto <javierbarretocp@gmail.com>
